@@ -11,6 +11,7 @@ router.post("/career/members", async (req, res) => {
   try {
     const profiles = await Profiles.create({
       name: req.body.name,
+      email:req.body.email,
       profile: req.body.profile,
       moreInfo: req.body.moreInfo,
       phone:req.body.phone
