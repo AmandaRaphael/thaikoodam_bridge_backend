@@ -22,7 +22,7 @@ mongoose
   .then(() => console.log("We are connected to the database"))
   .catch(() => console.log("We are not connected to the database"));
 
-app.listen("3001", () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log('Server is listening');
     
 })
